@@ -1,0 +1,95 @@
+body {
+    font-family: 'Orbitron', sans-serif; /* Futuristic font */
+    background: linear-gradient(135deg, #0d1b2a, #1b263b, #415a77); /* Dark sci-fi gradient */
+    background-size: 400% 400%;
+    animation: gradientShift 15s ease infinite; /* Moving background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+/* Animated background gradient */
+@keyframes gradientShift {
+    0% { background-position: 0% 0%; }
+    50% { background-position: 100% 100%; }
+    100% { background-position: 0% 0%; }
+}
+
+.container {
+    background: rgba(27, 38, 59, 0.8); /* Semi-transparent dark panel */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(65, 90, 119, 0.7), inset 0 0 10px rgba(255, 255, 255, 0.1);
+    text-align: center;
+    border: 1px solid #778da9; /* Subtle glowing border */
+    backdrop-filter: blur(5px); /* Frosted glass effect */
+}
+
+h1 {
+    color: #e0e1dd; /* Light gray with a futuristic feel */
+    text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; /* Neon glow */
+    animation: glitter 1.5s infinite; /* Glittering effect */
+}
+
+p {
+    color: #b0c4de;
+    text-shadow: 0 0 5px #778da9;
+}
+
+/* Glittering text animation */
+@keyframes glitter {
+    0% { text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; }
+    50% { text-shadow: 0 0 15px #00d4ff, 0 0 25px #00d4ff; }
+    100% { text-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff; }
+}
+
+input {
+    padding: 12px;
+    width: 220px;
+    margin: 15px 0;
+    border: 2px solid #00d4ff; /* Neon cyan border */
+    border-radius: 8px;
+    background: rgba(14, 22, 33, 0.9); /* Dark transparent input */
+    color: #e0e1dd; /* Light text */
+    box-shadow: 0 0 15px #00d4ff; /* Glow effect */
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 25px #00d4ff, 0 0 35px #00d4ff; /* Brighter glow on focus */
+}
+
+button {
+    padding: 12px 25px;
+    background: #00d4ff; /* Neon cyan */
+    color: #0d1b2a; /* Dark text for contrast */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 0 15px #00d4ff, 0 0 25px #00d4ff; /* Glowing shadow */
+    animation: pulse 1.5s infinite; /* Pulsating effect */
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00b4d8;
+    box-shadow: 0 0 25px #00d4ff, 0 0 35px #00d4ff; /* Bigger glow on hover */
+}
+
+/* Pulsating button animation */
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 15px #00d4ff; }
+    50% { transform: scale(1.05); box-shadow: 0 0 25px #00d4ff; }
+    100% { transform: scale(1); box-shadow: 0 0 15px #00d4ff; }
+}
+
+#result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #e0e1dd;
+    text-shadow: 0 0 5px #778da9;
+}
